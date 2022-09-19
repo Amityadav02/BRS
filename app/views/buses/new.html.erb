@@ -1,0 +1,19 @@
+<h1>New bus</h1>
+<%= form_with(model: @bus, local: true) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :registration %>
+  <%= f.number_field :registration %>
+
+  <%= f.label :source %>
+  <%= f.text_field :source %>
+
+  <%= f.label :destination %>
+  <%= f.text_field :destination %>
+
+  <%= f.label :total_seats %>
+  <%= f.number_field :total_seats %>
+
+  <%= f.submit %>
+<% end %>
