@@ -1,0 +1,26 @@
+<table>
+  <tr>
+    <th>Bus Name</th>
+    <th>Registration No.</th>
+    <th>Source</th>
+    <th>Destination</th>
+    <th>Total Seats</th>
+  </tr>
+  <% @buses.each do |bus| %>
+    <tr>
+      <td><%= link_to bus.name, bus %></td>
+      <td><%= bus.registration %></td>
+      <td><%= bus.source %></td>
+      <td><%= bus.destination %></td>
+      <td><%= bus.total_seats %></td>
+    </tr>
+  <% end %>
+</table>
+<style>
+  table, th, td {
+    border: 1px solid black;
+  }
+  table {
+    width: 100%
+  }
+</style>

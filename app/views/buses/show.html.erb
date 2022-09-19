@@ -1,0 +1,21 @@
+<section class="bus-details">
+  <div class="details">
+    <h2>
+      <%= @bus.name %>
+    </h2>
+    <h2>
+      <%= @bus.registration %>
+    </h2>
+    <h3>
+      <%= @bus.source %> -
+      <%= @bus.destination %>
+    </h3>
+    <p>
+      <%= @bus.total_seats %>
+    </p>
+  </div>
+</section>
+
+<section class="admin">
+  <%= link_to "Edit", edit_bus_path(@bus), class: "button" %>
+</section>
